@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sxe"
+    tools:context=".MainActivity">
+
+    <!-- انا احلى حدا بالدنيا -->
+    <!-- I AM THE GREATEST -->
+<com.budiyev.android.codescanner.CodeScannerView
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:id="@+id/scanner_view"
+    app:autoFocusButtonColor="@color/white"
+    app:autoFocusButtonVisible="true"
+    app:flashButtonColor="@color/white"
+    app:flashButtonVisible="true"
+    app:maskColor="#69000000"/>
+
+    <com.hanks.htextview.rainbow.RainbowTextView
+
+        android:id="@+id/tv_textView"
+        android:layout_width="391dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/scanner_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:autoSizeTextType="uniform"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Move Camera to the QR-CODE."
+        android:textSize="25dp"
+        app:colorSpace="150dp"
+        app:colorSpeed="8dp">
+    </com.hanks.htextview.rainbow.RainbowTextView>
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        android:padding="12dp"
+        android:shadowColor="@color/yellow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="24"
+        android:text="@string/glow"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:translationX="-5dp"
+        android:text="Copy"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:buttonMode="regular"
+        app:roundedCorners="true"
+        app:showOutline="true" />
+
+
+</RelativeLayout>
